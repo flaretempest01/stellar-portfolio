@@ -17,12 +17,8 @@ export const HeroSection = () => {
               Sato
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-            {`Web Developer with a strong foundation in
-            creating dynamic and responsive web applications. Aspiring cybersecurity enthusiast,
-            particularly interested in penetration testing. My commitment to
-            continuous learning and problem-solving drives my passion for
-            securing digital landscapes.`}
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+            {`Creative Web Developer and Aspring Cybersecurity specialize in Pentesting.`}
           </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
@@ -31,7 +27,7 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-17 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>
