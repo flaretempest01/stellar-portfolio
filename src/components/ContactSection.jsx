@@ -8,8 +8,27 @@ import {
   Youtube,
 } from "lucide-react";
 import { cn } from "../lib/utils";
+import { useToast } from "../hooks/use-toast";
+import { useState } from "react";
 
 export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+      setIsSubmitting(false);
+    }, 1500);
+  };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -88,7 +107,10 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div className="bg-card p-8 rounded-lg shadow-xs">
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs"
+            onSubmit={handleSubmit}
+          >
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
             <form className="space-y-6">
               <div>
@@ -105,6 +127,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus: ring-primary"
+                  placeholder="Tsunayoshi Sawada... "
                 />
               </div>
               <div>
@@ -120,7 +143,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus: ring-primary"
-                  placeholder="example@gmail.com"
+                  placeholder="tsuna@gmail.com"
                 />
               </div>
               <div>
@@ -140,11 +163,13 @@ export const ContactSection = () => {
                 />
               </div>
               <button
+                disabled={isSubmitting}
                 className={cn(
                   "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
-                Send Message <Send size={16} />
+                {isSubmitting ? "Sending..." : "Send Message"}{" "}
+                <Send size={16} />
               </button>
             </form>
           </div>
