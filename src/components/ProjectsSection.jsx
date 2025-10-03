@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Savvice Fleet Management System",
+    title: "Fleet Management System",
     description:
       "Internal dashboard project for Savvice for driver, shuttling schedule, and routes management.",
     image: "/public/projects/proj_3.png",
