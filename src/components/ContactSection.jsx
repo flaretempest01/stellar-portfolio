@@ -128,12 +128,7 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <a
-                    href="mailto:sato.kazuya01@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +639628261296
-                  </a>
+                  <a className="text-muted-foreground">+639628261296</a>
                 </div>
               </div>
 
@@ -142,12 +137,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <a
-                    href="mailto:sato.kazuya01@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    Rizal, Philippines
-                  </a>
+                  <a className="text-muted-foreground">Rizal, Philippines</a>
                 </div>
               </div>
 
@@ -155,16 +145,25 @@ export const ContactSection = () => {
                 <h4 className="font-medium mb-4">Connect With Me</h4>
                 <div className="flex space-x-4 justify-center">
                   <a
+                    className="hover:text-primary hover:scale-110 transition-all duration-300"
                     href="https://www.linkedin.com/in/kazuya-sato/"
                     target="_blank"
                   >
-                    <Linkedin />
+                    <Linkedin size={24} />
                   </a>
-                  <a href="https://www.youtube.com/" target="_blank">
-                    <Youtube />
+                  <a
+                    className="hover:text-primary hover:scale-110 transition-all duration-300"
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                  >
+                    <Youtube size={24} />
                   </a>
-                  <a href="https://github.com/flaretempest01" target="_blank">
-                    <Github />
+                  <a
+                    className="hover:text-primary hover:scale-110 transition-all duration-300"
+                    href="https://github.com/flaretempest01"
+                    target="_blank"
+                  >
+                    <Github size={24} />
                   </a>
                 </div>
               </div>
