@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Personal Website With Parallax",
     description: "Personal Website to showcase my skills and projects.",
-    image: "/public/projects/proj_1.png",
+    image: "/projects/proj_1.png",
     tags: ["React", "TailwindCSS", "CSS/HTML", "Framer Motion", "MUI"],
     demoUrl: "",
     githubUrl: "https://github.com/flaretempest01/kaz-portfolio-v1#",
@@ -15,7 +15,7 @@ const projects = [
     title: "Animated Portfolio Website",
     description:
       "Portfolio website to introduce self and showcase my skills as developer.",
-    image: "/public/projects/proj_2.png",
+    image: "/projects/proj_2.png",
     tags: ["React", "CSS Animation", "Shadcn-ui", "lucide-react", "HTML/CSS"],
     demoUrl: "",
     githubUrl: "https://github.com/flaretempest01/animated-portfolio",
@@ -25,7 +25,7 @@ const projects = [
     title: "Fleet Management System",
     description:
       "Internal dashboard project for Savvice for driver, shuttling schedule, and routes management.",
-    image: "/public/projects/proj_3.png",
+    image: "/projects/proj_3.png",
     tags: [
       "NextJS",
       "TailwindCSS",
